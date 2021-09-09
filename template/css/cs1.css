@@ -1,0 +1,227 @@
+        .h { 
+            height: 88px;
+            width: 300px;
+            background-color: ghostwhite;
+            align-content: center;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            }
+         .h1 {
+            height: 88px;
+            width: 1050px;
+            left: 300px;
+            background-color: ghostwhite;
+            font-size: 40px;
+            position: fixed;
+            font-family: Lucida Fax;
+            color: black;
+            top: 0px;
+            padding: 15px 200px;
+            }
+      
+        
+.ak{
+    height: 30px;
+    width: 1350px;
+    position: fixed;
+    top: 88px;
+    left: 0px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.ak ul{
+    list-style: none;
+    position: relative;
+
+    padding: 2px;
+    margin: 0px;
+}
+.ak ul li{
+    float: left;
+    width: 150px;
+    position: relative;
+    
+}
+.ak ul li a{
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+    text-align: center;
+    font-family: bell mt;
+}
+
+.ak ul li a:hover:not(.active){
+    text-decoration: underline;
+    color: black;   
+}
+.ak ul li a.active{
+    text-decoration: underline;
+    color: black;   
+
+    
+}
+ #title1
+{
+position:relative;
+width:1340px;
+height: 100px;
+left: -25px;
+top: 20px;
+background-image:url(../img/Elegant_Background-4.jpg);
+}   
+    
+}
+
+        .x {
+            position: fixed;
+            background: ghostwhite;
+            height: 70px;
+            width: 1340px;
+            left: 0px;
+            top: 0px;
+
+
+
+        }
+        .body{
+        	top: 90px;
+        	left: 212px;
+        	background: #e4e4e4;
+        	height: 100%;
+        	width: 1133px;
+        	position: fixed;
+            
+        }
+        
+        .img{
+        	top: 170px;
+        	left: 298px;
+        	height: 270px;
+        	width: 250px;
+        	position: fixed;
+        
+            
+        }
+        .pq{
+    border-radius: 2px;
+
+    box-shadow: 2px 4px 4px black;
+  }
+        .dtl{
+        	height: 270px;
+        	width: 450px;
+        	font-size: 22px;
+        	position: fixed;        	
+        	padding: 0px 20px;
+            border:1px solid transparent;
+            top: 170px;
+            left: 550px;
+            background: ghostwhite;
+            font-family: Bell MT;
+            border-radius: 2px;
+            
+    box-shadow: 2px 4px 4px black;
+        }
+
+        #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7878ff;
+    color: white;
+}
+
+
+.s{
+    height: 35px;
+    width: 130px;
+    background: transparent;
+    margin-left: 70px;
+    border-radius: 10px;
+    color: green;
+    font-family: Bell MT;
+    font-size: 25px;
+    box-shadow: 4px 4px 6px black;
+    text-shadow: 1px 1px 1px #505050;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1340px;
+    margin-left: 30px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 0px -6px;
+
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 11px;
+    margin-top: 10px;
+
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 120%;
+}
+
+/* Clear floats after rows */ 
+
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+    width: 250px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
