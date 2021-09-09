@@ -1,0 +1,167 @@
+<html>
+<head>
+<style>
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 0px;
+    cursor: pointer;
+    
+      
+   
+}
+.button2{
+    margin-left: 10px;
+    margin-top: -102px;
+    position: relative;
+}
+.button1{
+    margin-left: 10px;
+    margin-top: -102px;
+    position: relative;
+}
+
+.button2:hover {
+    box-shadow:   0 12px 16px 0 rgba(0, 0, 0, 0.466),0 17px 50px 0 rgba(9, 56, 7, 0.39)
+}
+.button1:hover{
+    box-shadow:   0 12px 16px 0 rgba(0, 0, 0, 0.466),0 17px 50px 0 rgba(9, 56, 7, 0.39)
+
+}
+
+</style>
+<title>Disha eye hospitals</title>
+<link rel="stylesheet" type="text/css" href="b.css">
+</head>
+<body> 
+<div id="head">
+ <center><img src="disha/logo.png" height="50px" width="70px"> <font face="Castellar" size="20px"><br><b>DISHA EYE HOSPITAL </font></b><br> BERHAMPORE</center>
+</div>
+<div id="menu">
+<ul>
+<li><a href="../index.php">HOME</a></li>
+<li><a href="disha_doctor.html">DOCTORS</a></li>
+<li><a href="disha_dept.html">DEPARTMENT</a></li>
+<li><a href="../php/Help_Support.php">HELP & SUPPORT</a></li>
+
+</ul>
+</div>
+<div id="body">
+
+<div class="slideshow-container">
+
+ <div class="mySlides fade">
+ 
+ <img src="disha/1.jpg" width="1340px" height="450px" >
+ 
+ </div>
+                
+  <div class="mySlides fade">
+  
+  <img src="disha/2.jpg" width="1340px" height="450px" >
+  
+    </div>
+                
+    <div class="mySlides fade">
+  
+  <img src="disha/3.jpg" width="1340px" height="450px" >
+ 
+ </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<a href="appoinment.html"><button class="button button2">BOOK YOUR APPOINTMENT</button></a>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                  
+   <center><br><b> <h1 style="color:rgb(6, 9, 153); " >BEST IN DISHA</h1></b></center>
+
+<div id="d5">
+<br><br>
+<br><br><br>
+<b> Why Us? </b>
+<p style="font-size:80%;">
+    Quality treatment at affordable prices.<br>
+
+    Experienced & qualified eye specialists.<br>
+    
+    Pleasant ambience with focus on your eyes.<br>
+    
+    Friendly and helpful service
+    <br><br><br></p>
+
+</div>
+<div id="d6">
+    <br> <br><br><b>VISION</b> 
+    <p style="font-size:80%;">
+        Whenever we think of eye care we either sell a heavily draped state of art hospitality or drown us in servitude of feeding poverty. The common man with his handful of money and heart full of pride fits nowhere</p>
+    <br>
+    </div>
+    <div id="d7">
+
+        
+        <br><br><br><b>EYE BANK</b>
+<p style="font-size:80%;">
+    We are a part of the B.C Memorial Eye foundation and are located at the Barrackpore Branch of Disha Hospitals. Our services are available 24 hours a day and seven days a week. From a humble start in 1997 with just one eye surgeon and one assistant, we have come a long way.</p>
+</div>
+
+
+
+ 
+
+
+
+</div>
+<div id="title"><br><center>
+<B>Follow us on</B>
+<hr color="transparent">
+
+ &nbsp; &nbsp; &nbsp;<B> Tel: (033) 2545-1233 &nbsp;,
+Email: dishaeyehospitals@gmail.com</B>
+</center>
+</div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+</body>
+</html>

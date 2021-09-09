@@ -1,0 +1,160 @@
+<html>
+<head>
+<style>
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 0px;
+    cursor: pointer;
+    
+      
+   
+}
+.button2{
+    margin-left: 10px;
+    margin-top: -102px;
+    position: relative;
+}
+.button1{
+    margin-left: 10px;
+    margin-top: -102px;
+    position: relative;
+}
+
+.button2:hover {
+    box-shadow:   0 12px 16px 0 rgba(0, 0, 0, 0.466),0 17px 50px 0 rgba(9, 56, 7, 0.39)
+}
+.button1:hover{
+    box-shadow:   0 12px 16px 0 rgba(0, 0, 0, 0.466),0 17px 50px 0 rgba(9, 56, 7, 0.39)
+
+}
+
+</style>
+<title>LALDIGHI NURSING HOME</title>
+<link rel="stylesheet" type="text/css" href="b.css">
+</head>
+<body> 
+<div id="head">
+ <center><font face="Castellar" size="35px"><br><b>LALDIGHI NURSING HOME</b></font></center>
+</div>
+<div id="menu">
+<ul>
+<li><a href="../index.php">HOME</a></li>
+<li><a href="LNH_doctor">DOCTORS</a></li>
+<li><a href="LNH_dept.html">DEPARTMENT</a></li>
+<li><a href="../php/Help_Support.php">HELP & SUPPORT</a></li>
+
+</ul>
+</div>
+<div id="body">
+
+<div class="slideshow-container">
+
+ <div class="mySlides fade">
+ 
+ <img src="LALDIGHI NURSING HOME/p1.jpg" width="1340px" height="450px" >
+ 
+ </div>
+                
+  <div class="mySlides fade">
+  
+  <img src="LALDIGHI NURSING HOME/p2.jpg" width="1340px" height="450px" >
+  
+    </div>
+                
+    <div class="mySlides fade">
+  
+  <img src="LALDIGHI NURSING HOME/3.jpg" width="1340px" height="450px" >
+ 
+ </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<a href="appoinment.html"><button class="button button2">BOOK YOUR APPOINTMENT</button></a>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                  
+   <center><br><b> <h1 style="color:rgb(6, 9, 153); " >BEST IN LALDIGHI NURSING HOME</h1></b></center>
+
+<div id="d5">
+<br><br><br><br>
+
+<b>Advanced Technology </b>
+<p style="font-size:80%;">
+LALDIGHI NURSING HOME at Berhampur is recognized as one of the most technologically advanced and superspecialty hospital in Murshidabad.<br><br><br></p>
+
+</div>
+<div id="d6">
+    <br> <br><br><b>24/7 Availibility</b> 
+    <p style="font-size:80%;">
+        Provides 24 hours Emergency and trauma care with immediate consultation and experienced medical team</p>
+    <br>
+    </div>
+    <div id="d7">
+
+        
+        <br><br><br><b>Healthcare Solutions</b>
+<p style="font-size:80%;">
+    We are conveniently located with 5 OTs, 24 hours emergency, 24 hours pathology, Wards, ICU.</p>
+    </div>
+
+
+
+ 
+
+
+
+</div>
+<div id="title"><br><center>
+<B>Follow us on</B>
+<hr color="transparent">
+
+ &nbsp; &nbsp; &nbsp;<B>Phone:  077978 40530 &nbsp;,
+Website: http://LALDIGHI NURSING HOMEhospitalbhb.com</B>
+</center>
+</div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+</body>
+</html>

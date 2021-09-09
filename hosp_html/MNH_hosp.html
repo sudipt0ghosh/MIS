@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 0px 0px;
+            cursor: pointer;
+
+
+
+        }
+
+        .button2 {
+            margin-left: 10px;
+            margin-top: -102px;
+            position: relative;
+        }
+
+        .button1 {
+            margin-left: 10px;
+            margin-top: -102px;
+            position: relative;
+        }
+
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.466), 0 17px 50px 0 rgba(9, 56, 7, 0.39)
+        }
+
+        .button1:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.466), 0 17px 50px 0 rgba(9, 56, 7, 0.39)
+        }
+    </style>
+    <title>Murshidabad Nursing Home And Diagnostic Center Pvt Ltd</title>
+    <link rel="stylesheet" type="text/css" href="b.css">
+</head>
+
+<body>
+    <div id="head">
+        <center> <br> Murshidabad Nursing Home And Diagnostic Center Pvt Ltd
+            <img id="head i" src="index.png" height="20px" width="20px">
+            <br></center>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="MNH_doctor.html">DOCTORS</a></li>
+            <li><a href=#>DEPARTMENT</a></li>
+            <li><a href=#>HELP & SUPPORT</a></li>
+
+        </ul>
+    </div>
+    <div id="body">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+
+                <img src="img/Murshidabad Nurshing home.jpg" width="1340px" height="400px">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="img/murshidabad nurshing home 2.jpg" width="1340px" height="400px">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="img/wp1848587.jpg" width="1340px" height="400px">
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <a href="http://susrut.codepromanagement.com/kolkata-eye-hospital/online-doctor-appointment"><button class="button button2">BOOK
+                    YOUR APPOINTMENT</button></a>
+            <a href="#"><button class="button button1">SELECT YOUR DISEASE NAME </button></a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <center><b>
+                <h1 style="color:rgb(6, 9, 153); ">WE ARE HAPPY TO HELP YOU</h1>
+            </b></center>
+
+        <div id="no">
+<b>
+            <p style="font-family: bell MT   ">
+                Murshidabad Nursing Home And Diagnostic Center Pvt Ltd is one of a leading hospital in Murshidabad, West Bengal. It is situated at Kadbeltala(keshab Nagar), Jalangi Road, Po-cossimbazar-raj, Ps-berhampore, Murshidabad . Murshidabad Nursing Home And Diagnostic Center Pvt Ltd provide services to insured patients (who have health insurance) as well as those patients who are paying for their own treatment.
+                The Hospital provides their 100% efforts to treat patients. They also monitor consumer satisfaction with regard to clinical care such as the approach of the doctor, examination, education on taking medication, availability of services, waiting time, and cost provided in the outpatient department. 
+            </p></b>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <div id="title">
+        <br> &nbsp;&nbsp; &nbsp; &nbsp; <B>Follow us on
+            <td>
+                <img src="img/1516920571instagram-png-instagram-icon-1600x1600.png" width="25px" height="25px">
+                <img src="img/facebook-transparent-picsart-5.png" width="25px" height="25px"></B>
+        </td>
+        </center>
+        <hr color="transparent">
+
+        &nbsp; &nbsp; &nbsp; &nbsp;<B>Phone: 3482 9933674719</B>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

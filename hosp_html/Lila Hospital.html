@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 0px 0px;
+            cursor: pointer;
+
+
+
+        }
+
+        .button2 {
+            margin-left: 10px;
+            margin-top: -102px;
+            position: relative;
+        }
+
+        .button1 {
+            margin-left: 10px;
+            margin-top: -102px;
+            position: relative;
+        }
+
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.466), 0 17px 50px 0 rgba(9, 56, 7, 0.39)
+        }
+
+        .button1:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.466), 0 17px 50px 0 rgba(9, 56, 7, 0.39)
+        }
+    </style>
+    <title>LILA HOSPITAL</title>
+    <link rel="stylesheet" type="text/css" href="b.css">
+</head>
+
+<body>
+    <div id="head">
+        <center> <img src="lila/logo.png" height="70px" width="70px">
+            <font face="Castellar" size="35px"><br><b>LILA HOSPITAL</b></font>
+        </center>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="../index.php">HOME</a></li>
+            <li><a href="lila_doctor.html">DOCTORS</a></li>
+            <li><a href="lila_dept.html">DEPARTMENT</a></li>
+            <li><a href="../php/Help_Support.php">HELP & SUPPORT</a></li>
+
+        </ul>
+    </div>
+    <div id="body">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+
+                <img src="lila/2.jpg" width="1340px" height="450px">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="lila/1.png" width="1340px" height="450px">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="lila/3.jpg" width="1340px" height="450px">
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <a href="appoinment.html"><button class="button button2">BOOK YOUR APPOINTMENT</button></a>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <center><br><b>
+                <h1 style="color:rgb(6, 9, 153); ">BEST IN LILA</h1>
+            </b></center><br>
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The LILA HOSPITALs provide care for the whole family. Our multi speciality centers offer a range of
+        services and specialties with direct access to the specialists and state-of-the-art technology at this
+        Hospital. Any care you receive between the two will be seamlessly connected, ensuring you and your family’s
+        needs are met.<br> <br>When you come to one of LILA HOSPITALs, you may choose a doctor yourself, who will
+        coordinate your treatment for as long as you opt to receive your health care there. This doctor can also serve
+        as a liaison to a medical specialist at the Hospital, if needed.
+        <br><br><br><br><br><br><br>
+        <div id="title"><br>
+            <center>
+                <B>Follow us on</B>
+                <hr color="transparent">
+                <B> Main phone:  03482 274 356 &nbsp;,
+                    E-mail: info@lilahospital.com</B>
+            </center>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+</body>
+
+</html>

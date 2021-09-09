@@ -1,0 +1,182 @@
+<html>
+<head>
+<style>
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 0px;
+    cursor: pointer;
+    
+      
+   
+}
+.button2{
+    margin-left: 10px;
+    margin-top: -102px;
+    position: relative;
+}
+.button1{
+    margin-left: 10px;
+    margin-top: -102px;
+    position: relative;
+}
+
+.button2:hover {
+    box-shadow:   0 12px 16px 0 rgba(0, 0, 0, 0.466),0 17px 50px 0 rgba(9, 56, 7, 0.39)
+}
+.button1:hover{
+    box-shadow:   0 12px 16px 0 rgba(0, 0, 0, 0.466),0 17px 50px 0 rgba(9, 56, 7, 0.39)
+
+}
+
+</style>
+<title>Susrut eye care hospital</title>
+<link rel="stylesheet" type="text/css" href="b.css">
+</head>
+<body> 
+<div id="head">
+ <center>  <br>  Susrut Eye Care Hospital 
+ <img id="head i" src="index.png" height="20px" width="20px">
+ <br>FOR COMPLETE EYE CARE PROTECTION </center>
+</div>
+<div id="menu">
+<ul>
+<li><a href="../index.php">HOME</a></li>
+<li><a href="susrut_doctor.html">DOCTORS</a></li>
+<li><a href="susrut_dept.html">DEPARTMENT</a></li>
+<li><a href="../php/Help_Support.php">HELP & SUPPORT</a></li>
+
+</ul>
+</div>
+<div id="body">
+
+<div class="slideshow-container">
+
+ <div class="mySlides fade">
+ 
+ <img src="susrutimage/eye-care-750x390.jpg" width="1340px" height="400px" >
+ 
+ </div>
+                
+  <div class="mySlides fade">
+  
+  <img src="susrutimage/-25173_66620.jpg" width="1340px" height="400px" >
+  
+    </div>
+                
+    <div class="mySlides fade">
+  
+  <img src="susrutimage/shutterstock_100934467-Child-getting-eye-exam.jpg" width="1340px" height="400px" >
+ 
+ </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<a href="appoinment.html"><button class="button button2">BOOK YOUR APPOINTMENT</button></a>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                  
+   <center><b> <h1 style="color:rgb(6, 9, 153); " ><br>THE BEST IN EYECARE</h1></b></center>
+
+<div id="d5">
+<br><br><br>
+<b>Clinical Services </b>
+<p style="font-size:80%;">
+Susrut provides treatment for all eye diseases under various sub-specialties, while also offering a complete range of services through specialized clinics.
+<br><br><br></p>
+
+<b>Community Eye Care</b>
+<p style="font-size:80%;">
+Susrut organizes free eye checkup camp for adult people in the community (urban & rural) to identify cataract or other problems related to the eye.
+</p>
+</div>
+<div id="d6">
+   <b>Eye Bank</b> 
+    <p style="font-size:80%;">
+    The Vanmukta Eye Bank is one of the biggest providers of sight restoring corneas in India. Since its establishment in 1998, Vanmukta has greatly increased
+    </p>
+    <br><b>Diagnostic Labs</b>
+    <p style="font-size:80%;">
+    The diagnostic laboratory of Susrut provides hematology, biochemistry and clinical pathology services to the patients required for post and pre assessment of surgeries.
+    
+</p>
+    </div>
+    <div id="d7">
+
+        
+<b>Training</b>
+<p style="font-size:80%;">
+
+Training and education are recognized as key factors that influence the reach, range and quality of eye health service delivery. Hence, Susrut, strives to provide the highest
+
+</p>
+<b>Reasearch & Innovation</b>
+<p style="font-size:80%;">
+Susrut believes in continuous innovation and the institute is well equipped with state-of-the art infrastructure and highly qualified doctors and scientists.
+</p>
+    </div>
+
+
+
+ 
+
+
+
+</div>
+<div id="title">
+<br> &nbsp;&nbsp; &nbsp; &nbsp;  <B>Follow us on
+<td>
+<img src="susrutimage/1516920571instagram-png-instagram-icon-1600x1600.png" width="25px" height="25px">
+<img src="susrutimage/facebook-transparent-picsart-5.png" width="25px" height="25px"></B>
+</td></center>
+<hr color="transparent">
+
+ &nbsp; &nbsp; &nbsp;<B> Berhampore- +91 03482 274 970 ,
+ E-mail- susrut36@gmail.com, contactus@susrut.org</B>
+
+</div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+</body>
+</html>
